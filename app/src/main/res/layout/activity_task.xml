@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/layoutActivity"
+    tools:context=".CREATEACTIVITY"
+
+    >
+  <fragment
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:layout="@layout/fragment_manage_act"
+      class="com.example.taskmasterapplication.MANAGEACT"
+      android:id="@+id/manageActFrag"
+      />
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_list"
+        android:id="@+id/activityfrag"
+        class="com.example.taskmasterapplication.CREATEACTIVITYFRAG"
+        />
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_list"
+        android:id="@+id/listfrag"
+        class="com.example.taskmasterapplication.LISTFRAG"
+        />
+
+</LinearLayout>
